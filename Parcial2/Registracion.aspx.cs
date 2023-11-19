@@ -14,6 +14,7 @@ namespace Parcial2
             if (this.Session["Username"] != null)
             {
                 Label1.Text = "Session creada";
+
             }
         }
 
