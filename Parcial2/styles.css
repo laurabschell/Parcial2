@@ -1,0 +1,28 @@
+﻿body {
+    background-color: #F2D2BD;
+}
+
+.Contenido {
+    min-height: 100vh;
+    font-family: Calibri;
+}
+
+#navbar {
+    text-align: center;
+    background-color: pink;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: darkslategray;
+    margin: 3rem;
+}
+
+#footer {
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+    color: darkslategray;
+}
