@@ -3,6 +3,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <p>este es el gestion de archivos</p>
+    <p>Cargar archivo
+        <asp:FileUpload ID="FileUpload1" runat="server" AllowMultiple="True" />
+    </p>
+    <p>
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar archivo/s" />
+    </p>
+    <p>
+        <asp:GridView ID="GridView1" runat="server">
+        </asp:GridView>
+    </p>
 
 </asp:Content>
