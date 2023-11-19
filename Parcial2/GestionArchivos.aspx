@@ -10,7 +10,10 @@
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar archivo/s" />
     </p>
     <p>
-        <asp:GridView ID="GridView1" runat="server">
+        <asp:GridView ID="GridView1" runat="server" OnRowCommand="GridView1_RowCommand">
+            <Columns>
+                <asp:ButtonField AccessibleHeaderText="Descargar" ButtonType="Button" CommandName="Descargar" Text="DESCARGAR" />
+            </Columns>
         </asp:GridView>
     </p>
 

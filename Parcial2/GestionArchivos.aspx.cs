@@ -55,5 +55,20 @@ namespace Parcial2
             }
             cargarGrilla();
         }
+
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if(e.CommandName == "Descargar")
+            {
+                GridViewRow registro = GridView1.Rows[Convert.ToInt32(e.CommandArgument)];
+                string filePath = registro.Cells[2].Text;
+
+                Response.ContentType = "application/octet-stream";
+                Response.AppendHeader("Content-Disposition", "attachement; filename=" + Path.GetFileName(filePath));
+                Response.TransmitFile(filePath);
+                Response.End();
+
+            }
+        }
     }
 }
